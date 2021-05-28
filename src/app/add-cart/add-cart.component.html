@@ -1,0 +1,59 @@
+<app-header></app-header>
+
+<div class="container" id="fh5co-product">
+    <table class="checkout-table">
+            <tr>
+                <th>Action</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr *ngFor="let productData of productDataList">
+                <td>
+                    <div class="pr-qty">
+                        <button type="button" (click)="remove(productData)"><i
+                         class="fa fa-trash"></i></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="pr-img">
+                        <img [src]="productData.image" width="50px" height="50px" alt="user" />
+                    </div>
+                </td>
+                <td>
+                    <div class="pr-name">
+                        <h2>{{productData.name}}</h2>
+                    </div>
+                </td>
+                <td>
+                    <div class="pr-qty">
+                        <button type="button" (click)="callFunction('minus', productData)"><i
+                                class="fa fa-minus"></i></button>
+                        <p>{{productData.count}}</p>
+                        <button type="button" (click)="callFunction('plus', productData)"><i
+                                    class="fa fa-plus"></i></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="pr-price">
+                        <span class="price">&#x20B9; {{productData.count*productData.price}}/-</span>
+                    </div>
+                </td>
+            </tr>
+        
+        
+            <tr>
+                <td colspan="3">
+                    <p class="mb-0 align-right">Total:</p>
+                </td>
+                <td>
+                    <p class="mb-0">&#x20B9; {{FinalAmount}}/-</p>
+                </td>
+            </tr>
+        
+    </table>
+    <div class="ck-button">
+        <button class="btn btn-primary" type="button" (click)="checkout()">Checkout</button>
+    </div>
+</div>

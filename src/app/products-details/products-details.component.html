@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div id="fh5co-product" class="padd-slam">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 animate-box">
+                <figure class="product-img">
+                    <img [src]="productData.image"
+                        alt="user">
+                </figure>
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2>{{productData.name}}</h2>
+                        <span class="price">&#x20B9;
+                            {{productData.price}}/-</span>
+                        <p>
+                            <a (click)="addcart(productData)" class="btn
+                                btn-primary btn-outline btn-lg">Add to Cart</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>{{productData.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+.checkout-table {
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.checkout-table tr {
+    width: 100%;
+}
+
+.checkout-table tr td , .checkout-table tr th {
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+}
+
+.pr-img {
+    width: 50px;
+    height: 50px;
+}
+
+.pr-name h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.pr-qty {
+    display: inline-block;
+    vertical-align: top;
+    width: 108px;
+    border: 1px solid #dfdfdf;
+}
+
+.pr-qty button {
+    float: left;
+    border: none;
+    background: none;
+    padding: 0 10px;
+}
+
+.pr-qty p {
+    margin: 0;
+    float: left;
+    padding: 0 0;
+    width: 40px;
+    text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.ck-button {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}

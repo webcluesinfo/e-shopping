@@ -1,0 +1,12 @@
+figure.product-img {
+    width: 100%;
+    text-align: center;
+}
+
+figure.product-img img {
+    max-height: 400px;
+}
+
+#fh5co-product.padd-slam {
+    padding: 1em 0 0 0;
+}
